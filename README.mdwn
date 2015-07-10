@@ -1,0 +1,50 @@
+# Oz Shell Gnome Extension
+
+This is a Gnome Shell extension for interfacing with the [OZ application sandboxing framework](https://github.com/subgraph/oz).
+
+It allows viewing the running sandboxes, adding and removing user files into the sandboxes, terminating them, and opening a shell terminal inside the sandbox.
+
+## Installation
+
+You need to have `gjs` installed , so if it is not already:
+
+```
+apt-get install gjs
+```
+
+If you are running grsecurity/pax you will require to disable the mprotect pax flag on the `gjs` executable as with most JIT.
+
+If you would like to get rid of this dependency you could write a small python, c, or golang program to replace the small Gtk filechooser in `openFiles.js`.
+
+# Building
+
+```
+cd ozshell-gnome-extension
+./autogen.sh
+./configure --prefix=/usr
+make
+# To install for your user:
+make local-install
+# To install globally:
+sudo make install
+# To generate a distribution zip:
+make zip
+```
+
+You can now install the applet: go into `gnome-tweak-tool`; you may require to reload gnome-shell (\<alt-f2\> enter `r` and press <enter>).
+
+## Formalities
+
+### Caveats
+
+Currently the refresh is done by clearing the whole menu and rebuilding it.
+This is not only inefficient, but it means that the applet will not refresh if the menu is open.
+This should be fixed in the future by a) going through the items and individually removing/inserting them, 
+b) the addition of push events (will require additional components to be added to `oz-daemon`).
+
+### Translation & Credits
+
+* Deutsch: [Stefanie Schirmer](https://github.com/linse)
+* Thomas liebetraut [for his build template](https://github.com/tommie-lie/gnome-shell-extensions-template)
+* Bakunin for the inspiration.
+* Add your name here, send me a pull request!

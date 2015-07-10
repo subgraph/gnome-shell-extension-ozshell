@@ -1,0 +1,133 @@
+# Oz Shell Gnome Extension
+# Copyright (C) 2015
+# This file is distributed under the same license as the Oz package.
+# Subgraph <info@subgraph.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-06 21:55+0000\n"
+"PO-Revision-Date: 2015-07-10 06:27-0000\n"
+"Last-Translator: Subgraph <info@subgraph.com>\n"
+"Language-Team: Stefanie Schirmer <sschirme@gmail.com>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../src/extension.js:143
+msgid "No running sandboxes"
+msgstr "Keine laufenden Sandboxes"
+
+#: ../src/openFile.js:27
+#, javascript-format
+msgid "Select files or directories to add to %s sandbox"
+msgstr "Wähle Dateien oder Verzeichnisse, um sie zu %s Sandbox hinzuzufügen"
+
+#: ../src/openFile.js:46
+msgid "Open file(s) as read-only"
+msgstr "Datei read-only öffnen"
+
+#: ../src/openFile.js:74
+msgid "Only files mounted in your home are allowed"
+msgstr "Nur Dateien, die im Home-Verzeichnis gemounted sind, sind erlaubt"
+
+#: ../src/ozClient.js:96
+msgid "Unable to get message length!"
+msgstr "Kann Nachrichtenlänge nicht ermitteln!"
+
+#: ../src/ozMenuItem.js:30
+#, javascript-format
+msgid "Shutdown %s sandbox."
+msgstr "Sandbox %s herunterfahren."
+
+#: ../src/ozMenuItem.js:31
+msgid ""
+"Are you certain you want to shutdown this sandbox? Doing so will destroy any "
+"unsaved work."
+msgstr ""
+"Sind sie sicher, dass sie diese Sandbox herunterfahren wollen? Ungesicherte "
+"Daten gehen dann verloren."
+
+#: ../src/ozMenuItem.js:33 ../src/ozMenuItem.js:56
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../src/ozMenuItem.js:36
+msgid "Shutdown"
+msgstr "Herunterfahren"
+
+#: ../src/ozMenuItem.js:46
+msgid "Ok"
+msgstr "Ok"
+
+#: ../src/ozMenuItem.js:53
+msgid "Remove files from sandbox."
+msgstr "Dateien von Sandbox löschen."
+
+#: ../src/ozMenuItem.js:54
+#, javascript-format
+msgid ""
+"Removing files from a sandbox may result in data loss if the files are still "
+"open. Are you certain you want to remove:\n"
+"%s"
+msgstr ""
+"Löschen der Dateien von der Sandbox kann zu Datenverlust führen, wenn die "
+"Dateien noch geöffnet sind. Sind sie sicher, dass sie %s entfernen wollen?"
+
+#: ../src/ozMenuItem.js:59
+msgid "Remove"
+msgstr "Entfernen"
+
+#: ../src/ozMenuItem.js:165
+msgid "Add file..."
+msgstr "Datei hinzufügen..."
+
+#: ../src/ozMenuItem.js:167
+#, fuzzy
+msgid "Open terminal in sandbox"
+msgstr "Terminal in der Sandbox öffnen"
+
+#: ../src/ozMenuItem.js:169
+#, fuzzy
+msgid "Shutdown sandbox..."
+msgstr "Sandbox herunterfahren..."
+
+#: ../src/ozMenuItem.js:207
+msgid "Error adding files to sandbox!"
+msgstr "Fehler beim Hinzufügen der Dateien zur Sandbox!"
+
+#: ../src/ozMenuItem.js:248
+#, fuzzy
+msgid "Error removing files"
+msgstr "Fehler beim Hinzufügen der Dateien zur Sandbox!"
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:15
+msgid "Position in panel"
+msgstr ""
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:16
+msgid ""
+"Set the position of this GNOME Shell extension in the panel to either "
+"'center', 'left' or 'right' (requires restart)."
+msgstr ""
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:20
+msgid "Refresh interval in seconds"
+msgstr ""
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:21
+msgid "The interval in seconds to refresh the sandbox information."
+msgstr ""
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:25
+msgid "Gnome terminal display mode"
+msgstr ""
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:26
+msgid ""
+"Select the display mode of gnome-terminal when opening a shell in a sandbox."
+msgstr ""
