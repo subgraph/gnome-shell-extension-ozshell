@@ -12,6 +12,8 @@ It allows viewing the running sandboxes, adding and removing user files into the
 
 ## Installation
 
+### Prerequisites
+
 You need to have `gjs` installed , so if it is not already:
 
 ```
@@ -22,9 +24,15 @@ If you are running grsecurity/pax you will require to disable the mprotect pax f
 
 If you would like to get rid of this dependency you could write a small python, c, or golang program to replace the small Gtk filechooser in `openFiles.js`.
 
-# Building
+### Building
+
+If you do not wish to build it on your own you can simply download the [lastest zip release](https://github.com/subgraph/ozshell-gnome-extension/raw/docs/releases/ozshell@subgraph.com_1.zip) and skip this step.
 
 ```
+# Install the build dependencies:
+sudo apt-get install libglib2.0-dev gnome-common
+# Build it:
+git clone https://github.com/subgraph/ozshell-gnome-extension.git
 cd ozshell-gnome-extension
 ./autogen.sh
 ./configure --prefix=/usr
@@ -37,7 +45,9 @@ sudo make install
 make zip
 ```
 
-You can now install the applet: go into `gnome-tweak-tool`; you may require to reload gnome-shell (\<alt-f2\> enter `r` and press \<enter\>).
+### Installing
+
+You can now enable the applet: go into `gnome-tweak-tool`; you may require to reload gnome-shell (\<alt-f2\> enter `r` and press \<enter\>).
 
 ## Formalities
 
