@@ -31,7 +31,7 @@ sudo make install
 make zip
 ```
 
-You can now install the applet: go into `gnome-tweak-tool`; you may require to reload gnome-shell (\<alt-f2\> enter `r` and press <enter>).
+You can now install the applet: go into `gnome-tweak-tool`; you may require to reload gnome-shell (\<alt-f2\> enter `r` and press \<enter\>).
 
 ## Formalities
 
