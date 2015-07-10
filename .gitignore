@@ -1,0 +1,14 @@
+*~
+op/*.mo
+TODOs.txt
+gschemas.compiled
+*.zip
+messages.pot
+Makefile.in
+aclocal
+automate.cache*
+config.log
+config.status
+configure
+install-sh
+missing

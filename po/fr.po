@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OzShell 0.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-06 21:55+0000\n"
+"PO-Revision-Date: 2015-07-10 06:27-0000\n"
+"Last-Translator: Subgraph <info@subgraph.com>\n"
+"Language-Team: Subgraph <info@subgraph.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.6.10\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../src/extension.js:143
+msgid "No running sandboxes"
+msgstr "Aucun bac à sable en exécution"
+
+#: ../src/openFile.js:27
+#, javascript-format
+msgid "Select files or directories to add to %s sandbox"
+msgstr "Selectionnez les fichiers à ajouter dans le bac à sable %s"
+
+#: ../src/openFile.js:46
+msgid "Open file(s) as read-only"
+msgstr "Ouvrir le(s) fichier(s) en lecture seule"
+
+#: ../src/openFile.js:74
+msgid "Only files mounted in your home are allowed"
+msgstr "Seul les fichiers dans votre répertoire personnel sont permis"
+
+#: ../src/ozClient.js:96
+msgid "Unable to get message length!"
+msgstr "Impossible de déterminer la taille du message"
+
+#: ../src/ozMenuItem.js:30
+#, javascript-format
+msgid "Shutdown %s sandbox."
+msgstr "Arrêter le bac à sable %s."
+
+#: ../src/ozMenuItem.js:31
+msgid ""
+"Are you certain you want to shutdown this sandbox? Doing so will destroy any "
+"unsaved work."
+msgstr ""
+"Êtes-vous certain que vous voulez pour arrêter ce bac à sable? Cela peut "
+"détruire tout travail non enregistré."
+
+#: ../src/ozMenuItem.js:33 ../src/ozMenuItem.js:56
+msgid "Cancel"
+msgstr "Annuler "
+
+#: ../src/ozMenuItem.js:36
+msgid "Shutdown"
+msgstr "Arrêter"
+
+#: ../src/ozMenuItem.js:46
+msgid "Ok"
+msgstr "Ok"
+
+#: ../src/ozMenuItem.js:53
+msgid "Remove files from sandbox."
+msgstr "Retirer le fichier du bac à sable."
+
+#: ../src/ozMenuItem.js:54
+#, javascript-format
+msgid ""
+"Removing files from a sandbox may result in data loss if the files are still "
+"open. Are you certain you want to remove:\n"
+"%s"
+msgstr ""
+"Retier un fichier du bac à sable peut entraîner la perte de données si le "
+"fichier est encore ouvert. Êtes-vous certain que vous voulez retirer:\n"
+"%s"
+
+#: ../src/ozMenuItem.js:59
+msgid "Remove"
+msgstr "Retirer"
+
+#: ../src/ozMenuItem.js:165
+msgid "Add file..."
+msgstr "Ajouter un fichier..."
+
+#: ../src/ozMenuItem.js:167
+#, fuzzy
+msgid "Open terminal in sandbox"
+msgstr "Ouvrir un terminal dans le bac à sable"
+
+#: ../src/ozMenuItem.js:169
+#, fuzzy
+msgid "Shutdown sandbox..."
+msgstr "Arrêter le bac à sable..."
+
+#: ../src/ozMenuItem.js:207
+msgid "Error adding files to sandbox!"
+msgstr "Erreur lors de l'ajout des fichiers dans le bac à sable!"
+
+#: ../src/ozMenuItem.js:248
+msgid "Error removing files"
+msgstr "Erreur lors de l'ajout des fichiers"
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:15
+msgid "Position in panel"
+msgstr "Position dans la bar de réglage"
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:16
+msgid ""
+"Set the position of this GNOME Shell extension in the panel to either "
+"'center', 'left' or 'right' (requires restart)."
+msgstr "Position du menu dans la bar GNOME Shell: 'center', 'left', 'right'."
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:20
+msgid "Refresh interval in seconds"
+msgstr "Interval en secondes"
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:21
+msgid "The interval in seconds to refresh the sandbox information."
+msgstr "Intervale de rafraîchissement de l'information."
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:25
+msgid "Gnome terminal display mode"
+msgstr "Mode d'affichage de gnome-terminal"
+
+#: ../src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml:26
+msgid ""
+"Select the display mode of gnome-terminal when opening a shell in a sandbox."
+msgstr "Mode d'affichage de gnome-terminal."
