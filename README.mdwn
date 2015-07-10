@@ -4,6 +4,12 @@ This is a Gnome Shell extension for interfacing with the [OZ application sandbox
 
 It allows viewing the running sandboxes, adding and removing user files into the sandboxes, terminating them, and opening a shell terminal inside the sandbox.
 
+## Demo
+
+<p align="center">
+<a href="https://support.subgraph.com/videos/ozshell_evince_01.webm"><img src="https://github.com/subgraph/ozshell-gnome-extension/raw/docs/videos/ozshell_evince_01.gif" alt="OZ Shell Extension Evince Sandbox Demo"/></a>
+</p>
+
 ## Installation
 
 You need to have `gjs` installed , so if it is not already:
