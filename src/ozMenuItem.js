@@ -241,7 +241,6 @@ OzMenuItem.prototype =
 		this._dialog.connect('RemoveFile', Lang.bind(this, function() {
 			try {
 				let jret = ozClient.UnmountFile(this._sandbox.Id, file);
-				print(jret);
 				if (jret.error) {
 					if (jret.Msg) {
 						this._dialog = new ozDialog.ConfirmDialog(ErrorFileMountDialog, _("Error removing files"), jret.error);
