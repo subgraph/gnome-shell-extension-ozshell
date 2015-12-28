@@ -1,5 +1,5 @@
 {
-"shell-version": ["3.14", "3.16"]
+"shell-version": ["3.14", "3.16", "3.17", "3.18", "3.19"]
 , "uuid": "ozshell@subgraph.com"
 , "name": "OZ Shell"
 , "gettext-domain": "ozshell"
