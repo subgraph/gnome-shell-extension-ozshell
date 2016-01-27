@@ -1,0 +1,3 @@
+version=3
+
+https://github.com/subgraph/gnome-shell-extension-ozshell/tags (?:.*)/([\d\.]*)\.tar\.gz
