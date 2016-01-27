@@ -4,8 +4,8 @@ Priority: extra
 Maintainer: Subgraph <info@subgraph.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
-Homepage: https://github.com/subgraph/ozshell-gnome-extension
-Vcs-Git: https://github.com/subgraph/ozshell-gnome-extension.git
+Homepage: https://github.com/subgraph/gnome-shell-extension-ozshell
+Vcs-Git: https://github.com/subgraph/gnome-shell-extension-ozshell.git
 
 Package: gnome-shell-extension-ozshell
 Architecture: all
