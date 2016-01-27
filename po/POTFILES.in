@@ -1,2 +1,2 @@
 src/*.js
-src/schemas/*.xml.in
+src/schemas/*.xml
