@@ -1,0 +1,14 @@
+Source: gnome-shell-extension-ozshell
+Section: devel
+Priority: extra
+Maintainer: Subgraph <info@subgraph.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/subgraph/ozshell-gnome-extension
+Vcs-Git: https://github.com/subgraph/ozshell-gnome-extension.git
+
+Package: gnome-shell-extension-ozshell
+Architecture: all
+Built-Using: ${misc:Built-Using}
+Depends: gnome-shell (>=3.14), oz-daemon, ${misc:Depends}
+Description: Subgraph OZ Daemon Gnome Shell Extension.

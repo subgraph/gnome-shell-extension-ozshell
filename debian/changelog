@@ -1,0 +1,11 @@
+gnome-shell-extension-ozshell (0.0.2) unstable; urgency=medium
+
+  * Bumped gnome-shell version
+
+ -- Subgraph <info@subgraph.com>  Fri, 22 Jan 2016 23:59:34 +0000
+
+gnome-shell-extension-ozshell (0.0.1) unstable; urgency=medium
+
+  * Initial release 
+
+ -- Subgraph <info@subgraph.com>  Sat, 16 Jan 2016 23:54:55 +0000
