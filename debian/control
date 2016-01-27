@@ -11,4 +11,7 @@ Package: gnome-shell-extension-ozshell
 Architecture: all
 Built-Using: ${misc:Built-Using}
 Depends: gnome-shell (>=3.14), oz-daemon, ${misc:Depends}
-Description: Subgraph OZ Daemon Gnome Shell Extension.
+Description: Subgraph OZ Daemon GNOME Shell Extension.
+ Subgraph OZ Daemon GNOME Shell Extension allows one to
+ interact with running OZ sandboxes. It is used to add/remove
+ files from the host to a sandbox, or terminate a sandbox.
