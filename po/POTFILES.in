@@ -1,2 +1,8 @@
-src/*.js
-src/schemas/*.xml.in
+src/ozMenuItem.js
+src/openFile.js
+src/ozClient.js
+src/extension.js
+src/convenience.js
+src/spawn.js
+src/modalDialog.js
+src/schemas/org.gnome.shell.extensions.ozshell.gschema.xml
