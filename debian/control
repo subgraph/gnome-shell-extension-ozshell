@@ -2,7 +2,7 @@ Source: gnome-shell-extension-ozshell
 Section: devel
 Priority: extra
 Maintainer: Subgraph <info@subgraph.com>
-Build-Depends: debhelper (>= 9), dh-autoreconf
+Build-Depends: debhelper (>= 9), dh-autoreconf, libglib2.0-dev, gnome-common
 Standards-Version: 3.9.6
 Homepage: https://github.com/subgraph/gnome-shell-extension-ozshell
 Vcs-Git: https://github.com/subgraph/gnome-shell-extension-ozshell.git
@@ -10,7 +10,7 @@ Vcs-Git: https://github.com/subgraph/gnome-shell-extension-ozshell.git
 Package: gnome-shell-extension-ozshell
 Architecture: all
 Built-Using: ${misc:Built-Using}
-Depends: gnome-shell (>=3.14), oz-daemon, ${misc:Depends}
+Depends: gnome-shell (>=3.14), gnome-common, oz-daemon, ${misc:Depends}
 Description: Subgraph OZ Daemon GNOME Shell Extension.
  Subgraph OZ Daemon GNOME Shell Extension allows one to
  interact with running OZ sandboxes. It is used to add/remove
