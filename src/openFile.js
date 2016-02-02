@@ -50,6 +50,8 @@ const OzShellOpenFileApp = new Lang.Class({
 		if (this._chooser.run () == 1) {
 			let files = [];
 			let uhome = GLib.get_home_dir();
+			let uname = GLib.get_user_name();
+			let mpath = GLib.build_pathv('/', ['/media', uname]);
 			let found_invalid = false
 			for (let i in this._chooser.get_filenames()) {
 				let file = this._chooser.get_filenames()[i];
@@ -57,7 +59,7 @@ const OzShellOpenFileApp = new Lang.Class({
 					file = GLib.build_pathv('/', [uhome, file]);
 				}
 				
-				if (file.indexOf(uhome) == 0) {
+				if ((file.indexOf(uhome) == 0) || (file.indexOf(mpath) == 0)) {
 					files.push(file);
 				} else {
 					found_invalid = true;
@@ -70,7 +72,7 @@ const OzShellOpenFileApp = new Lang.Class({
 				}));
 			} else if (found_invalid) {
 				print(JSON.stringify({
-					'error': _("Only files mounted in your home are allowed")
+					'error': _("Only files mounted in your home or removeable medias are allowed")
 				}));
 			}
 		}
