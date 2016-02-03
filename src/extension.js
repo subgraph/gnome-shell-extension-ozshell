@@ -252,13 +252,14 @@ function init(extensionMeta) {
 }
 
 function enable() {
+	/*
 	let panelPosition = 1;
 	if (Main.sessionMode._modeStack.indexOf('classic') == 0) {
 		panelPosition = 3;
 	}
-	
+	*/
 	OzMenu = new OzMenuButton();
-	Main.panel.addToStatusArea('OzMenu', OzMenu, panelPosition, 'left');
+	Main.panel.addToStatusArea('OzMenu', OzMenu)//, panelPosition, 'left');
 	log("Oz Shell extension enabled!");
 }
 
