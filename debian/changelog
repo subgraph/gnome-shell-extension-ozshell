@@ -1,3 +1,9 @@
+gnome-shell-extension-ozshell (0.0.3-3.18.1) unstable; urgency=medium
+
+  * Fixed panel positioning
+
+ -- Subgraph <info@subgraph.com>  Sat, 06 Feb 2016 18:00:00 +0000
+
 gnome-shell-extension-ozshell (0.0.2-3.18.1) unstable; urgency=medium
 
   * Bumped gnome-shell version
