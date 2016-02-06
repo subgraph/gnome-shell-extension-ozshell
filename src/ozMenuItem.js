@@ -277,8 +277,8 @@ OzMenuItem.prototype =
 		}
 		
 		cmdArray.push(
-			  '--title="Terminal inside '+ this._sandbox.Profile +' sandbox"'
-			, '--execute'
+			  /*'--title="Terminal inside '+ this._sandbox.Profile +' sandbox"'
+			, */'--execute'
 			, pathOzClient
 			, 'shell'
 			, this._sandbox.Id.toString()
