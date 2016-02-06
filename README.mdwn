@@ -1,4 +1,4 @@
-# Oz Shell Gnome Extension
+# OZ Shell Gnome Extension
 
 This is a Gnome Shell extension for interfacing with the [OZ application sandboxing framework](https://github.com/subgraph/oz).
 

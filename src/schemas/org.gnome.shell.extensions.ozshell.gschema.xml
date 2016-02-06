@@ -1,19 +1,20 @@
 <schemalist gettext-domain="ozshell">
 	<enum id="org.gnome.shell.extensions.ozshell.position">
-		<value nick="center" value="0" />
-		<value nick="right" value="1" />
-		<value nick="left" value="2"  />
+		<value nick="none" value="0" />
+		<value nick="center" value="1" />
+		<value nick="right" value="2" />
+		<value nick="left" value="3" />
 	</enum>
 	<enum id="org.gnome.shell.extensions.ozshell.terminal-modes">
 		<value nick="windowed" value="0" />
 		<value nick="maximized" value="1" />
-		<value nick="fullscreen" value="2"  />
+		<value nick="fullscreen" value="2" />
 	</enum>
 	<schema id="org.gnome.shell.extensions.ozshell" path="/org/gnome/shell/extensions/ozshell/">
 		<key name="position-in-panel" enum="org.gnome.shell.extensions.ozshell.position">
-			<default>'left'</default>
+			<default>'none'</default>
 			<summary>Position in panel</summary>
-			<description>Set the position of this GNOME Shell extension in the panel to either 'center', 'left' or 'right' (requires restart).</description>
+			<description>Set the position of this GNOME Shell extension in the panel to either 'center', 'left' or 'right', 'none' (requires restart).</description>
 		</key>
 		<key name="refresh-interval" type="i">
 			<default>1</default>

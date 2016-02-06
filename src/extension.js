@@ -30,6 +30,7 @@ const OZSHELL_SETTINGS_SCHEMA = 'org.gnome.shell.extensions.ozshell';
 const OZSHELL_KEY_CLIENTPATH = 'path-oz-client-executable';
 const OZSHELL_KEY_REFRESHTIME = 'refresh-interval';
 const OZSHELL_KEY_TERMINALMODE = 'terminal-mode';
+const OZSHELL_KEY_PANELPOSITION = 'position-in-panel'
 
 let OzMenu;
 let Schema;
@@ -60,6 +61,7 @@ const OzMenuButton = new Lang.Class({
 		this._settings = Convenience.getSettings(OZSHELL_SETTINGS_SCHEMA);
 		this._refreshTime = this._settings.get_int(OZSHELL_KEY_REFRESHTIME);
 		this._termMode = this._settings.get_string(OZSHELL_KEY_TERMINALMODE);
+		this._panelPosition = this._settings.get_string(OZSHELL_KEY_PANELPOSITION);
 		this._ozConfig = null;
 		
 	// UI
@@ -241,10 +243,15 @@ const OzMenuButton = new Lang.Class({
 			this._settings.run_dispose();
 		}
 	},
+
+	getPanelPosition: function() {
+		log("OZ Shell Panel Position: " + this._panelPosition)
+		return this._panelPosition;
+	},
 });
 
 function init(extensionMeta) {
-	log("Oz Shell extension initialization from: " + extensionMeta.path);
+	log("OZ Shell extension initialization from: " + extensionMeta.path);
 	let theme = imports.gi.Gtk.IconTheme.get_default();
 	theme.append_search_path(extensionMeta.path + '/icons');
 	IconSize = (Panel.PANEL_ICON_SIZE - 4);//Math.round(Panel.PANEL_ICON_SIZE * 4 / 5);
@@ -252,15 +259,25 @@ function init(extensionMeta) {
 }
 
 function enable() {
-	/*
-	let panelPosition = 1;
-	if (Main.sessionMode._modeStack.indexOf('classic') == 0) {
-		panelPosition = 3;
-	}
-	*/
 	OzMenu = new OzMenuButton();
-	Main.panel.addToStatusArea('OzMenu', OzMenu)//, panelPosition, 'left');
-	log("Oz Shell extension enabled!");
+	switch (OzMenu.getPanelPosition()) {
+		case 'center':
+		case 'right':
+			Main.panel.addToStatusArea('OzMenu', OzMenu, -1, OzMenu.getPanelPosition());
+		break;
+		case 'left':
+			let panelIndex = 1;
+
+			if (Main.sessionMode._modeStack.indexOf('classic') == 0) {
+				panelIndex = 3;
+			}
+			Main.panel.addToStatusArea('OzMenu', OzMenu, panelIndex, 'left');
+		break;
+		default:
+			Main.panel.addToStatusArea('OzMenu', OzMenu)
+		break;
+	}
+	log("OZ Shell extension enabled!");
 }
 
 function disable() {
@@ -270,5 +287,5 @@ function disable() {
 	
 	OzMenu.destroy();
 	OzMenu = null;
-	log("Oz Shell extension disabled!");
+	log("OZ Shell extension disabled!");
 }
