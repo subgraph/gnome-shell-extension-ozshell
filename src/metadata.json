@@ -6,5 +6,5 @@
 , "settings-schema": "org.gnome.shell.extensions.ozshell"
 , "description": "OZ Shell is a Gnome Shell extension used to interace the OZ sandboxing daemon."
 , "url": "https://github.com/subgraph.com/ozshell-applet"
-, "version": 3
+, "version": 4
 }
