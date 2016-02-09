@@ -12,7 +12,7 @@ const Shell = imports.gi.Shell;
 const St = imports.gi.St;
 const Util = imports.misc.util;
 
-const Gettext = imports.gettext.domain('ozshell');
+const Gettext = imports.gettext.domain('gnome-shell-extension-ozshell');
 const _ = Gettext.gettext;
 const appSys = Shell.AppSystem.get_default();
 
@@ -255,7 +255,7 @@ function init(extensionMeta) {
 	let theme = imports.gi.Gtk.IconTheme.get_default();
 	theme.append_search_path(extensionMeta.path + '/icons');
 	IconSize = (Panel.PANEL_ICON_SIZE - 4);//Math.round(Panel.PANEL_ICON_SIZE * 4 / 5);
-	Convenience.initTranslations('ozshell');
+	Convenience.initTranslations('gnome-shell-extension-ozshell');
 }
 
 function enable() {

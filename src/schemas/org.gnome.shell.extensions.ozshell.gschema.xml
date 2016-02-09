@@ -1,4 +1,5 @@
-<schemalist gettext-domain="ozshell">
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gnome-shell-extension-ozshell">
 	<enum id="org.gnome.shell.extensions.ozshell.position">
 		<value nick="none" value="0" />
 		<value nick="center" value="1" />

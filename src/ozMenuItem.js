@@ -11,7 +11,7 @@ const St = imports.gi.St;
 const StatusSystem = imports.ui.status.system;
 const Util = imports.misc.util;
 
-const Gettext = imports.gettext.domain('ozshell');
+const Gettext = imports.gettext.domain('gnome-shell-extension-ozshell');
 const _ = Gettext.gettext;
 
 const Me = ExtensionUtils.getCurrentExtension();

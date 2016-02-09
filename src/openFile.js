@@ -3,7 +3,7 @@ const Gio = imports.gi.Gio;
 const Gtk = imports.gi.Gtk;
 const GLib = imports.gi.GLib;
 
-const Gettext = imports.gettext.domain('ozshell');
+const Gettext = imports.gettext.domain('gnome-shell-extension-ozshell');
 const _ = Gettext.gettext;
 
 const OzShellOpenFileApp = new Lang.Class({

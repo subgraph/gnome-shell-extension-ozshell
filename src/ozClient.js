@@ -3,7 +3,7 @@ const Util = imports.misc.util;
 const GLib = imports.gi.GLib;
 const Gio = imports.gi.Gio;
 
-const Gettext = imports.gettext.domain('ozshell');
+const Gettext = imports.gettext.domain('gnome-shell-extension-ozshell');
 const _ = Gettext.gettext;
 
 //let msg = '{"Type":"Ping","MsgID":1,"IsResponse":false,"Body":{}}';

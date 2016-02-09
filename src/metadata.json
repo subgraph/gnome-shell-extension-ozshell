@@ -2,9 +2,9 @@
 "shell-version": ["3.14", "3.16", "3.17", "3.18", "3.19"]
 , "uuid": "ozshell@subgraph.com"
 , "name": "OZ Shell"
-, "gettext-domain": "ozshell"
+, "gettext-domain": "gnome-shell-extension-ozshell"
 , "settings-schema": "org.gnome.shell.extensions.ozshell"
 , "description": "OZ Shell is a Gnome Shell extension used to interace the OZ sandboxing daemon."
 , "url": "https://github.com/subgraph.com/ozshell-applet"
-, "version": 2
+, "version": 3
 }
