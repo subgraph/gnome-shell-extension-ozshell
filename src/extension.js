@@ -78,7 +78,13 @@ const OzMenuButton = new Lang.Class({
 						  y_fill: true,
 						  track_hover: true });
 		this._setButtonIcon(false);
+		
+		this._buttonLabel = new St.Label({ text: _("OZ"),
+								y_expand: true,
+								y_align: Clutter.ActorAlign.CENTER });
+		
 		this._menuLayout.add_child(this._button)
+		//this._menuLayout.add_child(this._buttonLabel)
 		this._menuLayout.add_child(PopupMenu.arrowIcon(St.Side.BOTTOM));
 		
 		this.actor.add_actor(this._menuLayout);
