@@ -1,3 +1,10 @@
+gnome-shell-extension-ozshell (0.0.4-3.18.1) unstable; urgency=medium
+
+  * Allowing dynamic whitelist of /media/user
+  * Small fixes
+
+ -- Local User <user@profound.int.lalonde.me>  Thu, 11 Feb 2016 06:39:29 +0000
+
 gnome-shell-extension-ozshell (0.0.3-3.18.1) unstable; urgency=medium
 
   * Fixed panel positioning
