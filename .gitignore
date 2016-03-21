@@ -12,3 +12,6 @@ config.status
 configure
 install-sh
 missing
+.anjuta
+.anjuta_*.db
+*.anjuta
