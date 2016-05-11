@@ -7,7 +7,7 @@ It allows viewing the running sandboxes, adding and removing user files into the
 ## Demo
 
 <p align="center">
-<a href="https://support.subgraph.com/videos/ozshell_evince_01.webm"><img src="https://github.com/subgraph/ozshell-gnome-extension/raw/docs/videos/ozshell_evince_01.gif" alt="OZ Shell Extension Evince Sandbox Demo"/></a>
+<a href="https://dist.subgraph.com/videos/ozshell_evince_01.webm"><img src="https://github.com/subgraph/ozshell-gnome-extension/raw/docs/videos/ozshell_evince_01.gif" alt="OZ Shell Extension Evince Sandbox Demo"/></a>
 </p>
 
 ## Installation
