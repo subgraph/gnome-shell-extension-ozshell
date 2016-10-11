@@ -51,7 +51,7 @@ const ErrorFileMountDialog = {
 
 const ConfirmFileDeletationDialog = {
 	subject: _("Remove files from sandbox."),
-	description: _("Removing files from a sandbox may result in data loss if the files are still open. Are you certain you want to remove:\n%s"),
+	description: _("Removing files from a sandbox may result in data loss.\nIf the files are still open by a program it may still be accesed!\n\nAre you certain you want to remove:\n%s"),
 	confirmButtons: [{ signal: 'CancelRemoveFile',
 						label: _("Cancel"),
 						key: Clutter.Escape },
