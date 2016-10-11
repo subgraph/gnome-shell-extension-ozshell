@@ -72,37 +72,37 @@ function HaltSandbox(sandboxId) {
 
 function _commandSync(commandMsg) {
 	let sockClient, sockConnection, output_reader, output_writer;
-	
+
 	let addr = new Gio.UnixSocketAddress({address_type: Gio.UnixSocketAddressType.ABSTRACT, path: 'oz-control'});
-	sockClient = new Gio.SocketClient({family: Gio.SocketFamily.UNIX});
-	
+	sockClient = new Gio.SocketClient({family: Gio.SocketFamily.UNIX, timeout: 2});
+
 	let sockConnection = sockClient.connect(addr, null);
-	
+
 	//let inStr = new Gio.DataInputStream({ base_stream: sockConnection.get_input_stream() });
 	//output_reader = new Gio.DataInputStream({ base_stream: inStr });
 	let output_reader = new Gio.DataInputStream({ base_stream: sockConnection.get_input_stream() });
 	output_reader.set_byte_order(Gio.DataStreamByteOrder.BIG_ENDIAN);
-	
+
 	let output_writer = new Gio.DataOutputStream({ base_stream: sockConnection.get_output_stream() });
 	output_writer.set_byte_order(Gio.DataStreamByteOrder.BIG_ENDIAN);
 	output_writer.put_uint32(commandMsg.length, null);
 	output_writer.write(commandMsg, null);
 	output_writer.close(null);
-	
+
 	output_reader.fill(4, null);
 	let blen = output_reader.read_uint32(null);
-	
+
 	if (blen == NaN) {
 		throw(_("Unable to get message length!"));
 	}
-	
+
 	output_reader.fill(blen, null);
-	
+
 	let buff = output_reader.read_bytes(blen, null).get_data();
-	
+
 	output_reader.close(null);
 	sockConnection.close(null);
-	
+
 	try {
 		let jbuff = JSON.parse(buff);
 		if (jbuff.Type == "Error") {
