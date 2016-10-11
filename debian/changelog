@@ -1,3 +1,9 @@
+gnome-shell-extension-ozshell (0.0.7-3.22.0) unstable; urgency=high
+
+  * Added socket client timeout
+
+ -- Subgraph <info@subgraph.com>  Tue, 11 Oct 2016 00:00:00 +0000
+
 gnome-shell-extension-ozshell (0.0.6-3.21.1) unstable; urgency=high
 
   * Bumped version to GNOME Shell 3.21
